@@ -12,5 +12,17 @@ another_sorted_numbers = numbers.sort()
 print(numbers)
 print(another_sorted_numbers)
 
-missing_letter = sorted("The quick brown fox jumps over the lazy dog")
+missing_letter = sorted("The quick brown fox jumps over the lazy dog",
+                        key=str.casefold)
 print(missing_letter)
+
+names = ["Graham",
+         "John",
+         "terry",
+         "eric",
+         "Terry",
+         "michael"
+         ]
+
+names.sort(key=str.casefold)
+print(names)
